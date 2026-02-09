@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 25px;
+            color: #444;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #4facfe;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00c6ff;
+        }
+
+        #jobList {
+            list-style: none;
+            padding: 0;
+        }
+
+        #jobList li {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        #jobList button {
+            margin-right: 10px;
+            padding: 6px 12px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Job Portal</h1>
+
+    <!-- Search Section -->
+    <h2>Search Job</h2>
+    <input type="text" id="searchTitle" placeholder="Search by job title...">
+    <button onclick="searchJobs()">Search</button>
+    <button onclick="loadJobs()">Reset</button>
+
+    <!-- Add/Edit Job Form -->
+    <h2>Add / Edit Job</h2>
+    <form id="jobForm">
+        <input type="text" id="title" placeholder="Job Title" required>
+        <input type="text" id="company" placeholder="Company" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="text" id="description" placeholder="Description" required>
+        <button type="submit">Save Job</button>
+    </form>
+
+    <!-- Job List -->
+    <h2>Available Jobs</h2>
+    <ul id="jobList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
