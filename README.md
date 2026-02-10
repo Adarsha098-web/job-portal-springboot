@@ -21,7 +21,7 @@ A full-stack Job Portal web application built using Spring Boot, MySQL, and Java
 - Username: admin
 - Password: admin
 
-  ![image alt]
+  ![image alt](https://github.com/Adarsha098-web/job-portal-springboot/blob/4bd8b5bd23674a80f56a1836f4496bd0d15d614d/Job-Portal/login.png)
 
 # How to Run
 1. Clone the repository:
