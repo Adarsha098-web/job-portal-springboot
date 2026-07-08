@@ -34,7 +34,6 @@ A full-stack Job Portal web application built using Spring Boot, MySQL, and Java
 
 3. Configure MySQL in `application.properties`.
 
-4. Run the Spring Boot application.
+4. Run the Spring Boot application in browser.
 
-5. Open in browser:
--  http://localhost:8080/
+
